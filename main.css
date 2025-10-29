@@ -27,3 +27,22 @@ h2{
     justify-content: center;
 }
 
+footer {
+
+    width: 100%;
+    text-align: center;
+}
+
+picture{
+    display: flex;
+    justify-content: center;
+
+}
+
+img{
+    width: 50vh;
+    height: 50vh;
+}
+
+
+
