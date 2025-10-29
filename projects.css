@@ -1,0 +1,18 @@
+body{
+    background-color: gray;
+    font-family: 'Lato', sans-serif;
+}
+
+.menu{
+    background-color: lightgray;
+    list-style: none;
+    box-shadow: 1px 1px 10px 2px rgb(0, 0, 0,0.3);
+    box-sizing: border-box;
+    height: 5vh;
+    width: 50vw;
+    margin-left: auto;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    
+}
