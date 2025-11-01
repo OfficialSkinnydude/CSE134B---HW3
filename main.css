@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
 body{
     background-color: gray;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .menu{
@@ -23,6 +26,7 @@ body{
 
 .menu li a:hover{
     color: #807e7a;
+    font-size: large;
 }
 
 
