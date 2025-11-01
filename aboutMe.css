@@ -1,6 +1,9 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+body {
     background-color: gray;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .menu{
@@ -17,6 +20,26 @@ body{
     
 }
 
+.menu .active {
+    color: #807e7a; 
+}
+
+.menu li a:hover{
+    color: #807e7a;
+}
+
+
+.menu li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+
+
+
+
+
 main{
     display: flex;
     align-items: flex-start; 
@@ -24,9 +47,10 @@ main{
 }
 
 main picture img {
-    width: 40vw;
+    width: 35vw;
     height: auto;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 main section {
