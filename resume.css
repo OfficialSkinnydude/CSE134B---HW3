@@ -1,6 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
 body{
     background-color: gray;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in; 
+    animation-delay: 0s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }
 
 .menu{
@@ -15,4 +34,31 @@ body{
     align-items:center;
     justify-content: space-around;
     
+}
+
+.menu .active {
+    color: #807e7a; 
+}
+
+.menu li a:hover{
+    color: #807e7a;
+    font-size: large;
+
+}
+
+
+.menu li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+@keyframes grow{
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(2);
+    }
 }
