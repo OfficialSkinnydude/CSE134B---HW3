@@ -17,6 +17,22 @@ body{
     
 }
 
+.menu .active {
+    color: #807e7a; 
+}
+
+.menu li a:hover{
+    color: #807e7a;
+}
+
+
+.menu li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+
 h1{
     display: flex;
     justify-content: center;
