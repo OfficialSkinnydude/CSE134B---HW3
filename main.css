@@ -17,24 +17,25 @@ body{
     display: flex;
     align-items:center;
     justify-content: space-around;
+
+    li{
+        a{
+            text-decoration: none;
+            color: black;
+            transition: 0.3s;
+        }
+        &:hover{
+            color: #807e7a;
+            font-size: large;    
+        }
+    }
+
+    &.active{
+        color: #807e7a; 
+    }
     
 }
 
-.menu .active {
-    color: #807e7a; 
-}
-
-.menu li a:hover{
-    color: #807e7a;
-    font-size: large;
-}
-
-
-.menu li a{
-    text-decoration: none;
-    color: black;
-    transition: 0.3s;
-}
 
 
 h1{
