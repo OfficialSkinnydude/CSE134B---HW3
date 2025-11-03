@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 
+
 body{
     background-color: gray;
     font-family: 'Open Sans', sans-serif;
@@ -10,6 +11,8 @@ body{
     animation-delay: 0s; 
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 @keyframes fadeIn{
@@ -52,14 +55,32 @@ body{
     
 }
 
+h2{
+    position: relative;
+    font-size: xx-large;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.leftSide{
+    display: flex;
+    flex-direction: column;
 
 
-@keyframes grow{
-    0%{
-        transform: scale(1);
-    }
+}
 
-    100%{
-        transform: scale(2);
-    }
+.rightSide{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding-left: 5px;
+} 
+img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
