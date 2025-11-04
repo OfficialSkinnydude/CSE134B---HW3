@@ -1,8 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+:root {
+  color-scheme: light dark;
+}
+
+
+:root {
+  color-scheme: light dark;
+  --primary-color: light-dark(#333, #fafafa);
+  --primary-background: light-dark(#F8FAF9, #121212);
+  --highlight-color: light-dark(hotpink, lime);
+}
+
+:root {
+  &:has(input[name="color-scheme"][value="light"]:checked) {
+    color-scheme: light;
+  }
+  &:has(input[name="color-scheme"][value="dark"]:checked) {
+    color-scheme: dark;
+  }
+}
+
 
 body{
-    background-color: #F8FAF9;
+    background-color: light-dark(#F8FAF9, #333);
     font-family: 'Open Sans', sans-serif;
     margin-left: 50px;
     margin-right: 50px;
@@ -104,6 +125,10 @@ picture{
         height: 35px;
         padding-top: 10px;
     } 
+    label{
+        padding-top: 18px;
+        padding-left: 20px;
+    }  
 }
 
 
