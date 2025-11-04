@@ -6,11 +6,17 @@
 <title>Resume</title>
 </head>
 <body>
-<ul class="menu">
-    <li><a href="aboutMe.html">About Me</a></li>
-    <li><a class="active" href="resume.html">Resume</a></li>
-    <li><a href="projects.html">Projects</a></li>
-</ul>
+
+<div class="navigator">
+    <picture>
+        <a href="index.html"><img src="assets/home.png" alt="homeIcon"></a>
+    </picture>
+    <ul class="menu">
+        <li><a class="active" href="aboutMe.html">About Me</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+    </ul>
+</div>
 
 <h1>Resume</h1>
 
@@ -39,17 +45,7 @@
 
 
     <div class="rightSide">
-        <section>
-        <h3>Education</h3>
-        <ol>
-            <li>University of California San Diego</li>
-            <li>Major: Mathematics-Compute Science</li>
-        </ol>
-        <picture>
-            <img src="assets/UCSD-Seal-Logo.png" alt="ucsd-seal">
-        </picture>
-        </section>
-        <section style="padding-left: 5px;">
+        <section style="padding-left:20px; padding-right: 20px;">
             <h3>Experience and Projects</h3>
             <p><strong>IT & CRM Coordinator</strong></p>
             <ul>
@@ -80,6 +76,16 @@
                 <li>Implemented logic to skip non-alphabet characters and handle both uppercase and lowercase inputs, with the key required to be uppercase</li>
                 <li>Utilized VIM for code development and debugging</li>
             </ul>
+        </section>
+        <section class="Education">
+            <h3>Education</h3>
+            <ol>
+                <li>University of California San Diego</li>
+                <li>Major: Mathematics-Computer Science</li>
+            </ol>
+            <picture>
+                <img src="assets/UCSD-Seal-Logo.png" alt="ucsd-seal">
+            </picture>
         </section>
     </div>
 </main>
