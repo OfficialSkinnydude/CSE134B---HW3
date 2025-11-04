@@ -2,8 +2,10 @@
 
 
 body{
-    background-color: gray;
+    background-color: #F8FAF9;
     font-family: 'Open Sans', sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .menu{
@@ -17,6 +19,14 @@ body{
     display: flex;
     align-items:center;
     justify-content: space-around;
+    border-radius: 20px;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in; 
+    animation-delay: 0s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+
 
     li{
         a{
@@ -36,13 +46,28 @@ body{
     
 }
 
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
 
-h1{
+
+.Name_Title{
     display: flex;
     justify-content: center;
 }
-
 h2{
     display: flex;
     justify-content: center;
@@ -54,15 +79,31 @@ footer {
     text-align: center;
 }
 
+
+
 picture{
     display: flex;
     justify-content: center;
+    border-radius: 50%;
 
 }
 
-img{
-    width: 50vh;
-    height: 50vh;
+.mainImage{
+    width: 300px;
+    height: 300px;
+    object-fit:cover;
+    border-radius: 50%;
+
+}
+
+.navigator{
+   display: flex;
+   flex-direction: row;
+    picture img{
+        width: 35px;
+        height: 35px;
+        padding-top: 10px;
+    } 
 }
 
 
