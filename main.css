@@ -24,7 +24,7 @@
 
 body{
     background-color: light-dark(#F8FAF9, #333);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
     margin-left: 50px;
     margin-right: 50px;
 }
