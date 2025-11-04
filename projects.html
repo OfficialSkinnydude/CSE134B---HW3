@@ -7,19 +7,26 @@
 </head>
 <body>
 
-<ul class="menu">
-    <li><a href="aboutMe.html">About Me</a></li>
-    <li><a href="resume.html">Resume</a></li>
-    <li><a href="projects.html">Projects</a></li>
-</ul>
+<div class="navigator">
+    <picture>
+        <a href="index.html"><img src="assets/home.png" alt="homeIcon"></a>
+    </picture>
+    <label><input name="color-scheme" type="radio" value="light" checked>Light</label>
+    <label><input name="color-scheme" type="radio" value="dark">Dark</label>
+    <ul class="menu">
+        <li><a class="active" href="aboutMe.html">About Me</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+    </ul>
+</div>
 
 <h1>My Projects</h1>
-<article>
+<article class="firstProject">
     <header>
         <h2>Webreg to Google Calendar</h2>
         <p>Made by: Jose Arteaga</p>
     </header>
-    <img src="assets/WebregToGoogleCalendar_50.png" alt="WebregToGoogleCalendarScreenshot">
+    <img src="assets/WebregToGoogleCalendar_50.png" alt="WebregToGoogleCalendarScreenshot" loading="lazy">
     <h3>Description</h3>
     <p>This is a firefox extension that allows UCSD students to import their course schedule to
         Google Calendar with a click of a download. No csv downloads necessary. This can save a students
@@ -48,13 +55,13 @@
 
 </article>
 
-<article>
+<article class="secondProject">
     <header>
         <h2>RSVP Website</h2>
         <p>Made by:Jose Arteaga</p>
     </header>
 
-    <img src="assets/RSVP.png" alt="rsvp screenshot">
+    <img src="assets/RSVP.png" alt="rsvp screenshot" loading="lazy">
     <h3>Description</h3>
     <p>This is a website that was used as an online invitation for a Quinceañera Event.
         The website has a homepage where the user can register for the event. It shows an input form
