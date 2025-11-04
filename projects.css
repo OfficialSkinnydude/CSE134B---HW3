@@ -1,8 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  background-color: light-dark(#F8FAF9, #333);
+}
+
+:root {
+  color-scheme: light dark;
+  --primary-color: light-dark(#333, #fafafa);
+  --primary-background: light-dark(#F8FAF9, #121212);
+  --highlight-color: light-dark(hotpink, lime);
+}
+
+:root {
+  &:has(input[name="color-scheme"][value="light"]:checked) {
+    color-scheme: light;
+  }
+  &:has(input[name="color-scheme"][value="dark"]:checked) {
+    color-scheme: dark;
+  }
+}
 
 body{
-    background-color: gray;
     font-family: 'Open Sans', sans-serif;
     animation-name: fadeIn;
     animation-duration: 0.5s;
@@ -10,6 +32,8 @@ body{
     animation-delay: 0s; 
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 @keyframes fadeIn{
@@ -36,6 +60,7 @@ body{
     display: flex;
     align-items:center;
     justify-content: space-around;
+    border-radius: 20px;
 
     li{
         a{
@@ -53,4 +78,36 @@ body{
         color: #807e7a; 
     }
     
+}
+
+img{
+    width: 800px;  
+    height: 500px;
+    object-fit: contain;
+
+}
+
+.firstProject{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navigator{
+   display: flex;
+   flex-direction: row;
+    picture img{
+        width: 35px;
+        height: 35px;
+        padding-top: 10px;
+    }
+    label{
+        padding-top: 18px;
+        padding-left: 20px;
+    } 
 }
